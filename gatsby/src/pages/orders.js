@@ -80,7 +80,7 @@ const OrdersPage = ({ data }) => {
               <div>
                 <h2>{pizza.name}</h2>
               </div>
-              <div>
+              <div className="sizes">
                 {['S', 'M', 'L'].map((size) => (
                   <button
                     type="button"

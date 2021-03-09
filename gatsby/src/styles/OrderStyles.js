@@ -14,6 +14,15 @@ const OrderStyles = styled.form`
     &.order,
     &.menu {
       grid-column: span 1;
+      .sizes {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 5px;
+        button {
+          margin: 0;
+        }
+      }
     }
     label {
       input {
@@ -24,10 +33,16 @@ const OrderStyles = styled.form`
   .siroop {
     display: none;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 935px) {
     fieldset.menu,
     fieldset.order {
       grid-column: span 2;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .sizes {
+      flex-direction: column;
     }
   }
 `;
